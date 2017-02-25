@@ -11,6 +11,6 @@ Electron Simple Counter
 - __render.js__ - runs as a separate process for each browser window
 
 ## Messaging
-- render.js sends an async message to main.js for it to update the counter and sets a timer to ask again in a second
-- main.js receives this message and adds 1 to the counter and sends an async message to render.js with the new value
-- render.js receives a new value and updates the span to show the results
+- __render.js__ sends an async message to main.js for it to update the counter and sets a timer to ask again in a second
+- __main.js__ receives this message and adds 1 to the counter and sends an async message to render.js with the new value
+- __render.js__ receives a new value and updates the span to show the results
